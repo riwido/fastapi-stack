@@ -12,6 +12,7 @@
 
 ### Fixes
 
+* [docs] Update README.md. PR [#13](https://github.com/riwido/fastapi-stack/pull/13) by [@riwido](https://github.com/riwido).
 *  Close sidebar drawer on user selection. PR [#1515](https://github.com/fastapi/full-stack-fastapi-template/pull/1515) by [@dtellz](https://github.com/dtellz).
 *  Fix required password validation when editing user fields. PR [#1508](https://github.com/fastapi/full-stack-fastapi-template/pull/1508) by [@jpizquierdo](https://github.com/jpizquierdo).
 
