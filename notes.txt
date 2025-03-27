@@ -1,0 +1,15 @@
+Changes made:
+
+Updated dependabot.yml pip section from / to /backend/
+    due to failures from dependencies not found
+
+Added LATEST_CHANGES fine grained token with read/write access to content
+    allowed workflow latest-changes.yml to update release-notes.md
+
+Modified projects url in add-to-projects.yml
+    also had to add a project first
+
+Added PROJECTS_TOKEN classic token with read/write access to projects
+    allowed workflow add-to-project.yml to do what it says it should
+
+Delete FUNDING.yml
