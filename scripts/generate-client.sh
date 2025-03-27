@@ -12,4 +12,3 @@ npm run generate-client
 npx biome format --write ./src/client
 
 touch ./src/client/thing
-
