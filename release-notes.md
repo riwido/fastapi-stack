@@ -2,6 +2,7 @@
 
 ## Latest Changes
 
+* Dependabot: Update tenacity requirement from <9.0.0,>=8.2.3 to >=8.2.3,<10.0.0 in /backend. PR [#2](https://github.com/riwido/fastapi-stack/pull/2) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * Dependabot: Update sentry-sdk[fastapi] requirement from <2.0.0,>=1.40.6 to >=1.40.6,<3.0.0 in /backend. PR [#3](https://github.com/riwido/fastapi-stack/pull/3) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * [bug] Delete .vscode/launch.json. PR [#6](https://github.com/riwido/fastapi-stack/pull/6) by [@riwido](https://github.com/riwido).
 
