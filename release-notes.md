@@ -2,6 +2,7 @@
 
 ## Latest Changes
 
+* [bug] they're everywhere. PR [#12](https://github.com/riwido/fastapi-stack/pull/12) by [@riwido](https://github.com/riwido).
 * [feature] Update .env. PR [#9](https://github.com/riwido/fastapi-stack/pull/9) by [@riwido](https://github.com/riwido).
 * is coding with cartoons the future?. PR [#8](https://github.com/riwido/fastapi-stack/pull/8) by [@riwido](https://github.com/riwido).
 * Dependabot: Bump bcrypt from 4.0.1 to 4.3.0 in /backend. PR [#1](https://github.com/riwido/fastapi-stack/pull/1) by [@dependabot[bot]](https://github.com/apps/dependabot).
