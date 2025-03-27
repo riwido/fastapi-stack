@@ -2,6 +2,7 @@
 
 ## Latest Changes
 
+* Action. PR [#16](https://github.com/riwido/fastapi-stack/pull/16) by [@riwido](https://github.com/riwido).
 * [Feature] Update docker-compose.yml. PR [#10](https://github.com/riwido/fastapi-stack/pull/10) by [@riwido](https://github.com/riwido).
 * [feature] Update docker-compose.override.yml. PR [#11](https://github.com/riwido/fastapi-stack/pull/11) by [@riwido](https://github.com/riwido).
 * [bug] they're everywhere. PR [#12](https://github.com/riwido/fastapi-stack/pull/12) by [@riwido](https://github.com/riwido).
