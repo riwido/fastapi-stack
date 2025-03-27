@@ -137,7 +137,7 @@ After having the `pre-commit` tool installed and available, you need to "install
 Using `uv`, you could do it with:
 
 ```bash
-❯ uv run pre-commit install
+ uv run pre-commit install
 pre-commit installed at .git/hooks/pre-commit
 ```
 
@@ -156,7 +156,7 @@ Then you can `git add` the modified/fixed files again and now you can commit.
 you can also run `pre-commit` manually on all the files, you can do it using `uv` with:
 
 ```bash
-❯ uv run pre-commit run --all-files
+ uv run pre-commit run --all-files
 check for added large files..............................................Passed
 check toml...............................................................Passed
 check yaml...............................................................Passed
