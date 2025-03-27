@@ -3,11 +3,11 @@ name: Lint Backend
 on:
   push:
     branches:
-      - master
-  pull_request:
-    types:
-      - opened
-      - synchronize
+      - action
+#  pull_request:
+#    types:
+#      - opened
+#      - synchronize
 
 jobs:
   lint-backend:
