@@ -31,6 +31,7 @@
 
 ### Internal
 
+* Action. PR [#17](https://github.com/riwido/fastapi-stack/pull/17) by [@riwido](https://github.com/riwido).
 * Action. PR [#15](https://github.com/riwido/fastapi-stack/pull/15) by [@riwido](https://github.com/riwido).
 
 ## 0.8.0
