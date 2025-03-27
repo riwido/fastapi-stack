@@ -2,6 +2,7 @@
 
 ## Latest Changes
 
+* [feature] Update .env. PR [#9](https://github.com/riwido/fastapi-stack/pull/9) by [@riwido](https://github.com/riwido).
 * is coding with cartoons the future?. PR [#8](https://github.com/riwido/fastapi-stack/pull/8) by [@riwido](https://github.com/riwido).
 * Dependabot: Bump bcrypt from 4.0.1 to 4.3.0 in /backend. PR [#1](https://github.com/riwido/fastapi-stack/pull/1) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * Dependabot: Update tenacity requirement from <9.0.0,>=8.2.3 to >=8.2.3,<10.0.0 in /backend. PR [#2](https://github.com/riwido/fastapi-stack/pull/2) by [@dependabot[bot]](https://github.com/apps/dependabot).
