@@ -2,6 +2,7 @@
 
 ## Latest Changes
 
+* Dependabot: Update sentry-sdk[fastapi] requirement from <2.0.0,>=1.40.6 to >=1.40.6,<3.0.0 in /backend. PR [#3](https://github.com/riwido/fastapi-stack/pull/3) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * [bug] Delete .vscode/launch.json. PR [#6](https://github.com/riwido/fastapi-stack/pull/6) by [@riwido](https://github.com/riwido).
 
 ### Fixes
