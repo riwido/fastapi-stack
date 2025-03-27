@@ -52,7 +52,7 @@ jobs:
     - name: Push changes
       if: ( github.event_name != 'pull_request' || github.secret_source == 'Actions' )
       run: |
-        git diff --staged --quiet || git commit -m " Autogenerate frontend client"
+        git diff --staged --quiet || git commit -m "✨ Autogenerate frontend client"
         git push
     # Fork PRs
     - name: Check changes

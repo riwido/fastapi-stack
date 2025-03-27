@@ -6,7 +6,7 @@ This project expects you to have a Traefik proxy handling communication to the o
 
 You can use CI/CD (continuous integration and continuous deployment) systems to deploy automatically, there are already configurations to do it with GitHub Actions.
 
-But you have to configure a couple things first. 
+But you have to configure a couple things first. 🤓
 
 ## Preparation
 
@@ -175,11 +175,11 @@ For production you wouldn't want to have the overrides in `docker-compose.overri
 
 ## Continuous Deployment (CD)
 
-You can use GitHub Actions to deploy your project automatically. 
+You can use GitHub Actions to deploy your project automatically. 😎
 
 You can have multiple environment deployments.
 
-There are already two environments configured, `staging` and `production`. 
+There are already two environments configured, `staging` and `production`. 🚀
 
 ### Install GitHub Actions Runner
 
