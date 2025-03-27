@@ -2,6 +2,7 @@
 
 ## Latest Changes
 
+* [feature] Update docker-compose.override.yml. PR [#11](https://github.com/riwido/fastapi-stack/pull/11) by [@riwido](https://github.com/riwido).
 * [bug] they're everywhere. PR [#12](https://github.com/riwido/fastapi-stack/pull/12) by [@riwido](https://github.com/riwido).
 * [feature] Update .env. PR [#9](https://github.com/riwido/fastapi-stack/pull/9) by [@riwido](https://github.com/riwido).
 * is coding with cartoons the future?. PR [#8](https://github.com/riwido/fastapi-stack/pull/8) by [@riwido](https://github.com/riwido).
