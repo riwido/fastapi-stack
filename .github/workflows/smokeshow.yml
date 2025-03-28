@@ -23,7 +23,8 @@ jobs:
     runs-on: ubuntu-latest
     # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
     permissions:
-      contents: write
+      actions: read
+      statuses: write
     steps:
       - name: Echo Message
         run: echo "This is ${{ github.event.workflow_run.conclusion }}"
