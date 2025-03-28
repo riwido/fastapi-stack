@@ -3,7 +3,7 @@ name: Test Backend
 on:
   push:
     branches:
-      - action
+      - master
 #  pull_request:
 #    types:
 #      - opened
@@ -39,3 +39,11 @@ jobs:
           name: coverage-html
           path: backend/htmlcov
           include-hidden-files: true
+      - name: Add commit status
+        uses: octodemo-resources/github-commit-status@v1
+        with:
+          context: unit_test_results
+          state: success
+          description: Tests passed
+          target_url: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
