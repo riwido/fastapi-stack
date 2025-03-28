@@ -46,7 +46,7 @@ jobs:
       - name: Add commit status
         uses: octodemo-resources/github-commit-status@v1
         with:
-          context: unit_test_results
+          context: coverage
           state: success
-          description: Tests passed
+          description: Coverage {coverage-percentage}
           target_url: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
