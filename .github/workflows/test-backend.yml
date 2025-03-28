@@ -37,6 +37,12 @@ jobs:
         run: uv run bash scripts/tests-start.sh "Coverage for ${{ github.sha }}"
         working-directory: backend
       - run: docker compose down -v --remove-orphans
+      - id: save-coverage-percentage
+        run: |
+          output=$(printf "%.02f" $(uv run coverage json -q -o /dev/stdout | jq .totals.percent_covered))
+          echo $output
+          echo "coverage_percentage=$output" >> "$GITHUB_OUTPUT"
+        working-directory: backend
       - name: Store coverage files
         uses: actions/upload-artifact@v4
         with:
@@ -46,7 +52,7 @@ jobs:
       - name: Add commit status
         uses: octodemo-resources/github-commit-status@v1
         with:
-          context: unit_test_results
+          context: coverage
           state: success
-          description: Tests passed
+          description: Coverage ${{ steps.save-coverage-percentage.outputs.coverage_percentage }}%
           target_url: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
