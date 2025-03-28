@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Echo Message
-        run: echo "This is the conclusion: ${{ github.event.workflow_run.conclusion }}"
+        run: echo "This is"
       - name: Checkout
         uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
