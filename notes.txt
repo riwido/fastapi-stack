@@ -13,3 +13,23 @@ Added PROJECTS_TOKEN classic token with read/write access to projects
     allowed workflow add-to-project.yml to do what it says it should
 
 Delete FUNDING.yml
+
+
+_________________________________
+
+
+updated packages:
+
+
+uv sync -U    (httptools 0.6.1 would break due to c error)
+
+
+
+
+
+
+
+Links to check out:
+
+https://github.com/samuelcolvin/coverage-badge <- would be cool to remove the smokeshow part
+https://github.com/tiangolo/latest-changes  <- nice feature except for the emojis
