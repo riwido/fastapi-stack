@@ -39,7 +39,7 @@ jobs:
       - run: docker compose down -v --remove-orphans
       - id: save-coverage-percentage
         run: |
-          output=$(uv run coverage json -q -o /dev/stdout | jq .totals.percent_covered)
+          output=$(printf "%.02f" $(uv run coverage json -q -o /dev/stdout | jq .totals.percent_covered))
           echo $output
           echo "coverage_percentage=$output" >> "$GITHUB_OUTPUT"
         working-directory: backend
@@ -54,5 +54,5 @@ jobs:
         with:
           context: coverage
           state: success
-          description: Coverage ${{ steps.save-coverage-percentage.outputs.coverage_percentage }}
+          description: Coverage ${{ steps.save-coverage-percentage.outputs.coverage_percentage }}%
           target_url: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
