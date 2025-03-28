@@ -22,6 +22,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      - name: Echo Message
+        run: echo "This is the conclusion: ${{ github.event.workflow_run.conclusion }}"
       - name: Checkout
         uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
