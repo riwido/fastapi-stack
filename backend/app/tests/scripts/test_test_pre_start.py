@@ -11,9 +11,11 @@ def test_init_successful_connection() -> None:
     session_mock = MagicMock()
     exec_mock = MagicMock(return_value=True)
     session_mock.configure_mock(**{"exec.return_value": exec_mock})
+    sentinel=object()
 
     with (
-        patch("sqlmodel.Session", return_value=session_mock),
+        patch("sqlmodel.Session.__enter__", return_value=session_mock),
+        patch("sqlmodel.select", return_value=sentinel),
         patch.object(logger, "info"),
         patch.object(logger, "error"),
         patch.object(logger, "warn"),
@@ -28,6 +30,7 @@ def test_init_successful_connection() -> None:
             connection_successful
         ), "The database connection should be successful and not raise an exception."
 
-        assert session_mock.exec.assert_called_once_with(
-            select(1)
-        ), "The session should execute a select statement once."
+        # "The session should execute a select statement once."
+        session_mock.exec.assert_called_once_with(
+            sentinel
+        )
