@@ -1,7 +1,7 @@
 # Full Stack FastAPI Template
 
-<a href="https://github.com/fastapi/full-stack-fastapi-template/actions?query=workflow%3ATest" target="_blank"><img src="https://github.com/fastapi/full-stack-fastapi-template/workflows/Test/badge.svg" alt="Test"></a>
-<a href="https://coverage-badge.samuelcolvin.workers.dev/redirect/fastapi/full-stack-fastapi-template" target="_blank"><img src="https://coverage-badge.samuelcolvin.workers.dev/fastapi/full-stack-fastapi-template.svg" alt="Coverage"></a>
+<a href="https://github.com/riwido/fastapi-stack/actions?query=workflow%3ATest" target="_blank"><img src="https://github.com/riwido/fastapi-stack/workflows/Test/badge.svg" alt="Test"></a>
+<a href="https://coverage-badge.samuelcolvin.workers.dev/redirect/riwido/fastapi-stack" target="_blank"><img src="https://coverage-badge.samuelcolvin.workers.dev/riwido/fastapi-stack.svg" alt="Coverage"></a>
 
 ## Technology Stack and Features
 
