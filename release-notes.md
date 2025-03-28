@@ -2,21 +2,8 @@
 
 ## Latest Changes
 
-* yay one less stupid emoji to look at. PR [#18](https://github.com/riwido/fastapi-stack/pull/18) by [@riwido](https://github.com/riwido).
-* Action. PR [#16](https://github.com/riwido/fastapi-stack/pull/16) by [@riwido](https://github.com/riwido).
-* [Feature] Update docker-compose.yml. PR [#10](https://github.com/riwido/fastapi-stack/pull/10) by [@riwido](https://github.com/riwido).
-* [feature] Update docker-compose.override.yml. PR [#11](https://github.com/riwido/fastapi-stack/pull/11) by [@riwido](https://github.com/riwido).
-* [bug] they're everywhere. PR [#12](https://github.com/riwido/fastapi-stack/pull/12) by [@riwido](https://github.com/riwido).
-* [feature] Update .env. PR [#9](https://github.com/riwido/fastapi-stack/pull/9) by [@riwido](https://github.com/riwido).
-* is coding with cartoons the future?. PR [#8](https://github.com/riwido/fastapi-stack/pull/8) by [@riwido](https://github.com/riwido).
-* Dependabot: Bump bcrypt from 4.0.1 to 4.3.0 in /backend. PR [#1](https://github.com/riwido/fastapi-stack/pull/1) by [@dependabot[bot]](https://github.com/apps/dependabot).
-* Dependabot: Update tenacity requirement from <9.0.0,>=8.2.3 to >=8.2.3,<10.0.0 in /backend. PR [#2](https://github.com/riwido/fastapi-stack/pull/2) by [@dependabot[bot]](https://github.com/apps/dependabot).
-* Dependabot: Update sentry-sdk[fastapi] requirement from <2.0.0,>=1.40.6 to >=1.40.6,<3.0.0 in /backend. PR [#3](https://github.com/riwido/fastapi-stack/pull/3) by [@dependabot[bot]](https://github.com/apps/dependabot).
-* [bug] Delete .vscode/launch.json. PR [#6](https://github.com/riwido/fastapi-stack/pull/6) by [@riwido](https://github.com/riwido).
-
 ### Fixes
 
-* [docs] Update README.md. PR [#13](https://github.com/riwido/fastapi-stack/pull/13) by [@riwido](https://github.com/riwido).
 *  Close sidebar drawer on user selection. PR [#1515](https://github.com/fastapi/full-stack-fastapi-template/pull/1515) by [@dtellz](https://github.com/dtellz).
 *  Fix required password validation when editing user fields. PR [#1508](https://github.com/fastapi/full-stack-fastapi-template/pull/1508) by [@jpizquierdo](https://github.com/jpizquierdo).
 
@@ -25,15 +12,6 @@
 *  Remove redundant field in inherited class. PR [#1520](https://github.com/fastapi/full-stack-fastapi-template/pull/1520) by [@tzway](https://github.com/tzway).
 *  Add minor UI tweaks in Skeletons and other components. PR [#1507](https://github.com/fastapi/full-stack-fastapi-template/pull/1507) by [@alejsdev](https://github.com/alejsdev).
 *  Add minor UI tweaks. PR [#1506](https://github.com/fastapi/full-stack-fastapi-template/pull/1506) by [@alejsdev](https://github.com/alejsdev).
-
-### Docs
-
-* Update SECURITY.md. PR [#14](https://github.com/riwido/fastapi-stack/pull/14) by [@riwido](https://github.com/riwido).
-
-### Internal
-
-* Action. PR [#17](https://github.com/riwido/fastapi-stack/pull/17) by [@riwido](https://github.com/riwido).
-* Action. PR [#15](https://github.com/riwido/fastapi-stack/pull/15) by [@riwido](https://github.com/riwido).
 
 ## 0.8.0
 

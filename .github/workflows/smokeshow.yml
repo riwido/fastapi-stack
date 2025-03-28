@@ -1,5 +1,5 @@
 name: Smokeshow
-# This is painful
+
 on:
   workflow_run:
     workflows: [Test Backend]

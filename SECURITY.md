@@ -20,7 +20,7 @@ I (the author, [@tiangolo](https://twitter.com/tiangolo)) will review it thoroug
 
 Please restrain from publicly discussing a potential security vulnerability.
 
-It's better to discuss privately and try to find a solution first, to limit the potential impact as much as possible, because security through obscurity is totally the way to go
+It's better to discuss privately and try to find a solution first, to limit the potential impact as much as possible.
 
 ---
 

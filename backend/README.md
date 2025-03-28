@@ -25,8 +25,6 @@ Then you can activate the virtual environment with:
 $ source .venv/bin/activate
 ```
 
-
-
 Make sure your editor is using the correct Python virtual environment, with the interpreter at `backend/.venv/bin/python`.
 
 Modify or add SQLModel models for data and SQL tables in `./backend/app/models.py`, API endpoints in `./backend/app/api/`, CRUD (Create, Read, Update, Delete) utils in `./backend/app/crud.py`.
