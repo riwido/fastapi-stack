@@ -37,9 +37,11 @@ jobs:
         run: uv run bash scripts/tests-start.sh "Coverage for ${{ github.sha }}"
         working-directory: backend
       - run: docker compose down -v --remove-orphans
-      - run: |
+      - name: save_coverage
+        run: |
           output=$(uv run coverage json -q -o /dev/stdout | jq .totals.percent_covered)
-          echo "::set-output name=coverage_percentage::$output"
+          echo $output
+          echo "coverage_percentage=$output" >> "$GITHUB_OUTPUT"
         working-directory: backend
       - name: Store coverage files
         uses: actions/upload-artifact@v4
@@ -52,5 +54,5 @@ jobs:
         with:
           context: coverage
           state: success
-          description: Coverage ${{ steps.run_command.outputs.coverage_percentage }}
+          description: Coverage ${{ steps.save_coverage.outputs.coverage_percentage }}
           target_url: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
