@@ -3,7 +3,7 @@ name: Lint Backend
 on:
   push:
     branches:
-      - master
+      - action
   pull_request:
     types:
       - opened

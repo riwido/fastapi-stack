@@ -1,8 +1,8 @@
 # Security Policy
 
-Security is very important for this project and its community. 🔒
+Security is very important for this project and its community.
 
-Learn more about it below. 👇
+Learn more about it below.
 
 ## Versions
 
@@ -18,7 +18,7 @@ I (the author, [@tiangolo](https://twitter.com/tiangolo)) will review it thoroug
 
 ## Public Discussions
 
-Please restrain from publicly discussing a potential security vulnerability. 🙊
+Please restrain from publicly discussing a potential security vulnerability.
 
 It's better to discuss privately and try to find a solution first, to limit the potential impact as much as possible.
 
@@ -26,4 +26,4 @@ It's better to discuss privately and try to find a solution first, to limit the 
 
 Thanks for your help!
 
-The community and I thank you for that. 🙇
+The community and I thank you for that.

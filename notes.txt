@@ -1,0 +1,84 @@
+Changes made:
+
+.github/workflows/latest-changes.yml
+    - added LATEST_CHANGES fine grained token with read/write access to content (allows access to update release-notes.md)
+    - no changes to file
+    - https://github.com/tiangolo/latest-changes
+    - will delete due to emoji usage in commit
+
+.github/dependabot.yml
+    - pip directory changed from / to /backend/ (errors from dependabot that dependencies couldn't be found)
+    - changed prefix from emoji to "Dependabot: "
+
+.github/workflows/add-to-project.yml
+    - Added PROJECTS_TOKEN classic token with read/write access to projects
+    - changed project url
+    - will delete next
+
+.github/workflows/deploy-staging.yml
+.github/workflows/lint-backend.yml
+.github/workflows/playwright.yml
+.github/workflows/test-docker-compose.yml
+    - changed branch from master to action
+
+.github/workflows/smokeshow.yml
+    - added "workflow_dispatch:" to allow manual invokation
+    - added permissions (contents: read, pages: write, id-token: write) to allow github pages use
+    - added environment params based on github pages static yml example
+    - added useless echo message of parameter for testing
+    - replaced smokeshow action with upload to github pages
+
+.github/workflows/test-backend.yml
+    - added "workflow_dispatch:" to allow manual invokation
+    - added permissions (actions: read, statuses write) to allow updating of commit messages
+    - added step to extract percentage and add to variable
+    - used output to update commit status, allowing readme badge to show coverage without smokeshow upload
+    - https://github.com/samuelcolvin/coverage-badge
+    - https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/workflow-commands-for-github-actions#example-of-setting-an-output-parameter
+
+      - id: save-coverage-percentage
+        run: |
+          output=$(printf "%.02f" $(uv run coverage json -q -o /dev/stdout | jq .totals.percent_covered))
+          echo $output
+          echo "coverage_percentage=$output" >> "$GITHUB_OUTPUT"
+        working-directory: backend
+
+      - name: Add commit status
+        uses: octodemo-resources/github-commit-status@v1
+        with:
+          context: coverage
+          state: success
+          description: Coverage ${{ steps.save-coverage-percentage.outputs.coverage_percentage }}%
+          target_url: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+.github/FUNDING.yml
+.vscode/launch.json
+    - deleted
+
+README.md
+    - changed badges to point to riwido/fastapi-stack
+    - changed workflows/Test to workflows/test-backend.yml
+
+backend/app/backend_pre_start.py
+backend/app/tests_pre_start.py
+    - changed imports of Select, select from sqlmodel to just importing sqlmodel, test patch did not work otherwise
+
+backend/app/core/config.py
+    - Removed PostgresDsn import
+    - Changed SQLALCHEMY_DATABASE_URL return type of PostgresDsn to MultiHostUrl after validating return type of object
+
+backend/app/tests/scripts/test_backend_pre_start.py
+backend/app/tests/scripts/test_test_pre_start.py
+    - patched sqlmodel.Session.__enter__ instead of sqlmodel.Session due to use in context manager
+    - patched sqlmodel.select to return sentinel, used sentinel to compare correct called-with arg
+    - changed called_once_with to assert_called_with_once (https://github.com/python/cpython/issues/100690)
+    - removed unnecessary assert statement before assert_called_with_once method (assert is performed in that function)
+
+backend/pyproject.toml
+    - formatter changed version ordering, aesthetic change only
+
+backend/uv.lock
+    - many changes (upgraded with uv sync -U)
+
+frontend/.gitignore
+    - formatter added newline at end of file
