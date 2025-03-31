@@ -1,0 +1,4 @@
+tls:
+  certificates:
+    - certFile: /etc/certs/local.tempetech.com.cert
+      keyFile: /etc/certs/local.tempetech.com.key

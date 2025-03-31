@@ -82,3 +82,14 @@ backend/uv.lock
 
 frontend/.gitignore
     - formatter added newline at end of file
+
+
+
+********
+
+
+Self signed certificate:
+
+https://doc.traefik.io/traefik/https/tls/
+https://medium.com/@clintcolding/use-your-own-certificates-with-traefik-a31d785a6441
+openssl req -new -x509 -keyout local.tempetech.com.key -out local.tempetech.com.cert -days 365 -nodes
